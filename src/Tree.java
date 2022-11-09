@@ -36,6 +36,10 @@ class Tree{
         }
     }
 
+    public TreeNode getRoot(){
+        return root;
+    }
+
     public String toString(){
         return toString(root);
     }

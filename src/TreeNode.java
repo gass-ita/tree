@@ -48,6 +48,6 @@ public class TreeNode {
     
     @Override
     public String toString() {
-        return value + " pos" + i + " " + j;
+        return value + "";
     }
 }

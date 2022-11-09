@@ -1,3 +1,5 @@
+import javax.swing.JFrame;
+
 public class App {
     public static void main(String[] args) throws Exception {
         Tree t = new Tree();
@@ -13,6 +15,14 @@ public class App {
         
 
         System.out.println(t.toString());
+
+        GraphicTree gt = new GraphicTree(t, 500, 500);
+
+        JFrame frame = new JFrame();
+        frame.setBounds(0, 0, 500, 500);
+        frame.add(gt);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     }
 }
